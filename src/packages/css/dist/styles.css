@@ -1,0 +1,20 @@
+/* src/styles.css */
+
+/* Colors */
+.text-red { color: red; }
+.text-blue { color: blue; }
+
+/* Font Sizes */
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 14px; }
+.text-lg { font-size: 18px; }
+
+/* Margins */
+.m-1 { margin: 4px; }
+.m-2 { margin: 8px; }
+.m-3 { margin: 12px; }
+
+/* Padding */
+.p-1 { padding: 4px; }
+.p-2 { padding: 8px; }
+.p-3 { padding: 12px; }
