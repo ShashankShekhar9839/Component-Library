@@ -1,0 +1,53 @@
+// Define a range for position values
+$min-value: 0;
+$max-value: 25;
+$step: 2;
+
+@for $i from $min-value through $max-value {
+  .top-#{$i} {
+    top: #{$i * $step}px;
+  }
+
+  .right-#{$i} {
+    right: #{$i * $step}px;
+  }
+
+  .bottom-#{$i} {
+    bottom: #{$i * $step}px;
+  }
+
+  .left-#{$i} {
+    left: #{$i * $step}px;
+  }
+}
+
+// Define a range for z-index values
+$min-z: 0;
+$max-z: 10;
+
+@for $i from $min-z through $max-z {
+  .z-#{$i} {
+    z-index: #{$i};
+  }
+}
+
+// Position properties
+.pos-abs {
+    position: absolute;
+  }
+  
+  .pos-rel {
+    position: relative;
+  }
+  
+  .pos-fix {
+    position: fixed;
+  }
+  
+  .pos-sti {
+    position: sticky;
+  }
+  
+  .pos-sta {
+    position: static;
+  }

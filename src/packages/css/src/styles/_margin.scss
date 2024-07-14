@@ -1,0 +1,26 @@
+// Define a range of values for the loop
+$min-margin: 0;
+$max-margin: 25;
+$step: 2;
+
+@for $i from $min-margin through $max-margin {
+  .m-#{$i} {
+    margin: #{$i * $step}px;
+  }
+
+  .mt-#{$i} {
+    margin-top: #{$i * $step}px;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i * $step}px;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i * $step}px;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i * $step}px;
+  }
+}

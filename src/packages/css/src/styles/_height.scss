@@ -1,0 +1,65 @@
+// Define a range for fixed height values (in pixels)
+$min-height: 0;
+$max-height: 50;
+$height-step: 5;
+
+@for $i from $min-height through $max-height {
+  .h-#{$i} {
+    height: #{$i * $height-step}px;
+  }
+}
+
+// Define height utility classes for common values
+.h-auto {
+  height: auto;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-20-p {
+    height: 20%;
+}
+
+.h-40-p {
+    height: 40%;
+}
+
+.h-half{
+    height: 50%;
+}
+
+.h-60-p {
+    height: 60%;
+}
+
+.h-80-p {
+    height: 80%;
+}
+
+// Define min-height utility classes
+.min-h-0 {
+  min-height: 0;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+// Define max-height utility classes
+.max-h-full {
+  max-height: 100%;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}

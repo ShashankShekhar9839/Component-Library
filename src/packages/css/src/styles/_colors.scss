@@ -1,0 +1,16 @@
+// Define a list of 50 colors
+$colors: (
+  "red", "green", "blue", "yellow", "pink", "purple", "orange", "brown", "black", "white",
+  "grey", "lightblue", "lightgreen", "lightpink", "lightyellow", "darkred", "darkgreen",
+  "darkblue", "darkpurple", "darkorange", "gold", "silver", "bronze", "navy", "teal",
+  "olive", "maroon", "aqua", "lime", "coral", "salmon", "khaki", "lavender", "beige",
+  "ivory", "indigo", "violet", "sienna", "plum", "crimson", "turquoise", "mint", "chocolate",
+  "tan", "peach", "periwinkle", "emerald", "amber", "fuchsia"
+);
+
+@for $i from 1 through length($colors) {
+  $color-name: nth($colors, $i);
+  .text-#{$color-name} {
+    color: $color-name;
+  }
+}
