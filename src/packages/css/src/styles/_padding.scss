@@ -1,0 +1,26 @@
+// Define a range of values for the loop
+$min-padding: 0;
+$max-padding: 25;
+$step: 2;
+
+@for $i from $min-padding through $max-padding {
+  .p-#{$i} {
+    padding: #{$i * $step}px;
+  }
+
+  .pt-#{$i} {
+    padding-top: #{$i * $step}px;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i * $step}px;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i * $step}px;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i * $step}px;
+  }
+}
