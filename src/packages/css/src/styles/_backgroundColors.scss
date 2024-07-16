@@ -1,16 +1,60 @@
 // Define a list of 50 colors
 $colors: (
-  "red", "green", "blue", "yellow", "pink", "purple", "orange", "brown", "black", "white",
-  "grey", "lightblue", "lightgreen", "lightpink", "lightyellow", "darkred", "darkgreen",
-  "darkblue", "darkpurple", "darkorange", "gold", "silver", "bronze", "navy", "teal",
-  "olive", "maroon", "aqua", "lime", "coral", "salmon", "khaki", "lavender", "beige",
-  "ivory", "indigo", "violet", "sienna", "plum", "crimson", "turquoise", "mint", "chocolate",
-  "tan", "peach", "periwinkle", "emerald", "amber", "fuchsia"
+  "red": red,
+  "green": green,
+  "blue": blue,
+  "yellow": yellow,
+  "pink": pink,
+  "purple": purple,
+  "orange": orange,
+  "brown": brown,
+  "black": black,
+  "white": white,
+  "grey": grey,
+  "lightblue": lightblue,
+  "lightgreen": lightgreen,
+  "lightpink": lightpink,
+  "lightyellow": lightyellow,
+  "darkred": darkred,
+  "darkgreen": darkgreen,
+  "darkblue": darkblue,
+  "darkpurple": darkpurple,
+  "darkorange": darkorange,
+  "gold": gold,
+  "silver": silver,
+  "bronze": bronze,
+  "navy": navy,
+  "teal": teal,
+  "olive": olive,
+  "maroon": maroon,
+  "aqua": aqua,
+  "lime": lime,
+  "coral": coral,
+  "salmon": salmon,
+  "khaki": khaki,
+  "lavender": lavender,
+  "beige": beige,
+  "ivory": ivory,
+  "indigo": indigo,
+  "violet": violet,
+  "sienna": sienna,
+  "plum": plum,
+  "crimson": crimson,
+  "turquoise": turquoise,
+  "mint": mint,
+  "chocolate": chocolate,
+  "tan": tan,
+  "peach": peach,
+  "periwinkle": periwinkle,
+  "emerald": emerald,
+  "amber": amber,
+  "fuchsia": fuchsia
 );
 
-@for $i from 1 through length($colors) {
-  $color-name: nth($colors, $i);
+
+@each $color-name, $color-value in $colors {
   .bg-#{$color-name} {
-    background-color: $color-name;
+    background-color: $color-value;
   }
 }
+
