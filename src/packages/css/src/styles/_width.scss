@@ -1,0 +1,65 @@
+// Define a range for fixed width values (in pixels)
+$min-width: 0;
+$max-width: 50;
+$width-step: 5;
+
+@for $i from $min-width through $max-width {
+  .h-#{$i} {
+    width: #{$i * $width-step}px;
+  }
+}
+
+// Define width utility classes for common values
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-20-p {
+    width: 20%;
+}
+
+.w-40-p {
+    width: 40%;
+}
+
+.w-half{
+    width: 50%;
+}
+
+.w-60-p {
+    width: 60%;
+}
+
+.w-80-p {
+    width: 80%;
+}
+
+// Define min-width utility classes
+.min-w-0 {
+  min-width: 0;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.min-w-screen {
+  min-width: 100vh;
+}
+
+// Define max-width utility classes
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-screen {
+  max-width: 100vh;
+}

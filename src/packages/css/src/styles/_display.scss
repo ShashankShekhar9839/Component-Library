@@ -1,0 +1,16 @@
+$display-values: (
+  none: none,
+  block: block,
+  inline: inline,
+  inline-block: inline-block,
+  inherit: inherit,
+  initial: initial,
+  unset: unset
+);
+
+// Generate classes for position property
+@each $display-name, $display-value in $display-values {
+    .dis-#{$display-name} {
+      display: $display-value;
+    }
+  }
