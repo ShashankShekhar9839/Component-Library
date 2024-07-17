@@ -1,0 +1,19 @@
+// Define border-radius values in pixels
+$border-radii: (
+  0: 0px,
+  sm: 2px,
+  md: 4px,
+  lg: 8px,
+  xl: 16px,
+  full: 100%,
+  inherit: inherit,
+  initial: initial,
+  unset: unset
+);
+
+// Generate classes for border-radius property
+@each $key, $value in $border-radii {
+  .br-#{$key} {
+    border-radius: $value;
+  }
+}

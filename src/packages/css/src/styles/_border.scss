@@ -1,0 +1,22 @@
+// Define border-style values
+$border-styles: (
+  none: none,
+  hidden: hidden,
+  dotted: dotted,
+  dashed: dashed,
+  solid: solid,
+  double: double,
+  groove: groove,
+  ridge: ridge,
+  inset: inset,
+  outset: outset,
+  inherit: inherit,
+  initial: initial,
+  unset: unset
+);
+
+@each $key, $value in $border-styles {
+    .bs-#{$key} {
+      border-style: $value;
+    }
+  }
