@@ -4,7 +4,7 @@ $max-width: 50;
 $width-step: 5;
 
 @for $i from $min-width through $max-width {
-  .h-#{$i} {
+  .w-#{$i} {
     width: #{$i * $width-step}px;
   }
 }
