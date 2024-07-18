@@ -14,4 +14,5 @@ const Template = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   label: 'Primary Button',
+  isBlock: false,
 };
