@@ -86,6 +86,7 @@
     "path-parse": "^1.0.7",
     "picocolors": "^1.0.1",
     "pkg-dir": "^7.0.0",
+    "prop-types": "^15.8.1",
     "punycode": "^2.3.1",
     "randombytes": "^2.1.0",
     "react": "^18.3.1",
