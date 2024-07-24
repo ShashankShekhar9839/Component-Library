@@ -1,17 +1,25 @@
-
-import React from 'react';
-import { Component } from "react";
+import React, { useEffect } from "react";
+import { Component, useRef } from "react";
 import Button from "../components/Button/Button";
-import 'shashank-monoatomic-css/dist/styles.css';
+import "shashank-monoatomic-css/dist/styles.css";
 
 export default {
-    title: 'Example/Button',
-    component : Button,
-}
+  title: "Example/Button",
+  component: Button,
+};
 
-const Template = (args) => <Button {...args} />;
+const Template = (args) => {
+  let buttonRef = useRef(null);
+  useEffect(() => {
+    if (buttonRef.current) {
+      console.log(buttonRef.current);
+    }
+  });
+  return <Button {...args} ref={buttonRef} />;
+};
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: 'Button',
+  label: "Primary Button",
+  isBlock: true,
 };
