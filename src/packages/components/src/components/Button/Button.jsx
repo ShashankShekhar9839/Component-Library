@@ -1,4 +1,4 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import "shashank-monoatomic-css/dist/styles.css";
 import PropTypes from "prop-types";
 
@@ -10,7 +10,7 @@ const propTypes = {
   onclick: PropTypes.func,
 };
 
-const Button = (props) => {
+const Button = (props, ref) => {
   const { label, isBlock, type = "Tertiary", size = 'lg' } = props;
 
   const commonBtnClasses = `${isBlock ? "dis-block" : "dis-inline-block"} flex flex-align-items-center justify-content-center`;
@@ -48,11 +48,12 @@ const Button = (props) => {
       className={`${getBtnClasses(type)} ${getBtnSizeClasses(size)} ${commonBtnClasses}`}
       style={{ textAlign: "center" }}
       onClick={handleClick}
+      ref={ref}
     >
       {label}
     </div>
   );
 };
 
-Button.propTypes = propTypes;
-export default Button;
+Button.propTypes = propTypes
+export default forwardRef(Button);
