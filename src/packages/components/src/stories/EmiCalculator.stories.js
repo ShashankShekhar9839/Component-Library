@@ -1,21 +1,15 @@
 import React, { useEffect } from "react";
 import { useRef } from "react";
-import Button from "../components/Button/Button";
+import EmiCalculator from "../components/EmiCalci/EmiCalculator";
 import "shashank-monoatomic-css/dist/styles.css";
 
 export default {
-  title: "Example/Button",
-  component: Button,
+  title: "Example/EmiCalculator",
+  component: EmiCalculator,
 };
 
 const Template = (args) => {
-  let buttonRef = useRef(null);
-  useEffect(() => {
-    if (buttonRef.current) {
-      console.log(buttonRef.current);
-    }
-  });
-  return <Button {...args} ref={buttonRef} />;
+  return <EmiCalculator {...args} />;
 };
 
 export const Primary = Template.bind({});
